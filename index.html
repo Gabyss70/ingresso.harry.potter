@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&family=Baskervville+SC&family=Great+Vibes&family=Lakki+Reddy&family=New+Amsterdam&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" 
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/_reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Compre seu Ingressso para Harry-Potter</title>
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <main class="container">
+
+        <div class="grafismo"></div>
+        <h1>Compre seu <span>ingresso</span></h1>
+        <form action="">
+            <label class="input-group">
+                Escolha o tipo
+                <select name="tipo-ingresso" id="tipo-ingresso">
+                    <option value="inferior">Cadeira inferior</option>
+                    <option value="superior">Cadeira superior</option>
+                    <option value="pista">Pista</option>
+                </select>
+            </label>
+            <label class="input-group">Qtde.
+                <input type="number" id="qtd" placeholder="00" min="1" max="10">
+            </label>
+            <button onclick="comprar()" type="button">Comprar</button>
+        </form>
+        <img class="hachuras">
+        <section>
+            <h2>Quantidade disponível</h2>
+
+            <ul class="lista">
+                <li>Pista<span id="qtd-pista">100</span></li>
+                <li>Cadeira superior<span id="qtd-superior">200</span></li>
+                <li>Cadeira inferior<span id="qtd-inferior">400</span></li>
+                
+            </ul>
+            <img src="./assets/baixados (3) (1).jpeg" alt="">
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
